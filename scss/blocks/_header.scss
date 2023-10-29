@@ -14,38 +14,11 @@
     url('./../img/header/header-bg.jpg');
 }
 
-.nav {
-    padding-top: 30px;
+.header__top-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.nav__logo {
-
-}
-
-.nav__logo-img {
-
-}
-.nav__logo-text {
-    padding-top: 15px;
-    font-family: $font-main;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1.44px;
-    color: $white;
-}
-
-.nav__list {
-    display: flex;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.7px;
-}
-
-.nav__list-item + .nav__list-item  {
-    margin-left: 40px;
+    // align-items: center;
+    // padding-top: 30px;
 }
 
 
