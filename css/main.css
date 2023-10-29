@@ -154,4 +154,29 @@ a:hover {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+
+.info {
+  position: relative;
+  padding-left: 35px;
+  font-size: 18px;
+}
+.info--map, .info--tel {
+  padding-left: 35px;
+}
+.info--map::before, .info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 21px;
+  width: 21px;
+  background-image: url(./../img/header/map.svg);
+  background-repeat: no-repeat;
+}
+.info--map::before {
+  background-image: url(./../img/header/map.svg);
+}
+.info--tel::before {
+  background-image: url(./../img/header/phone.svg);
 }/*# sourceMappingURL=main.css.map */
