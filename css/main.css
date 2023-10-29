@@ -96,6 +96,7 @@ body {
   background-color: #242833;
   color: #fff;
   font-size: 16px;
+  font-weight: 400;
 }
 
 a {
@@ -116,6 +117,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
   min-height: 840px;
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("./../img/header/header-bg.jpg");
 }
@@ -123,6 +126,7 @@ a:hover {
 .header__top-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__title {
@@ -140,4 +144,14 @@ a:hover {
 
 .header__title-img {
   margin-top: 81px;
+}
+
+.nav {
+  font-size: 14px;
+}
+
+.nav__list {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }/*# sourceMappingURL=main.css.map */

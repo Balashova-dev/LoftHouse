@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: space-between;
 
+    padding-top: 30px;
+    padding-bottom: 74px;
+
     min-height: 840px;
 
     background: linear-gradient(
@@ -17,7 +20,7 @@
 .header__top-row {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    align-items: center;
     // padding-top: 30px;
 }
 
