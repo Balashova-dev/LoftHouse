@@ -1,10 +1,49 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     min-height: 840px;
+
     background: linear-gradient(
-        180deg,
-         #242B33 11.98%, 
+    180deg,
+    #242B33 11.98%, 
     rgba(45, 52, 60, 0.38) 51.04%, 
     #242B33 92.19%
     ), 
     url('./../img/header/header-bg.jpg');
+}
+
+.nav {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+
+}
+
+.nav__logo-img {
+
+}
+.nav__logo-text {
+    font-family: $font-main;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+    color: $white;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list-item + .nav__list-item  {
+    margin-left: 40px;
+}
+.header__title {
+}
+.header__footer {
 }
