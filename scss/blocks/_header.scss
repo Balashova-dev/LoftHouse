@@ -47,7 +47,20 @@
 .nav__list-item + .nav__list-item  {
     margin-left: 40px;
 }
+
+
 .header__title {
+    max-width: 556px;
+    margin: 0 auto;
+    text-align: center;
 }
-.header__footer {
+
+.header__title-text {
+    font-family: $font-accent;
+    font-size: 48px;
+    font-weight: 700;
+    color: $accent;
+}
+.header__title-img {
+    margin-top: 81px;
 }

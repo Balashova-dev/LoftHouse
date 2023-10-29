@@ -145,4 +145,21 @@ a:hover {
 
 .nav__list-item + .nav__list-item {
   margin-left: 40px;
+}
+
+.header__title {
+  max-width: 556px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__title-text {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #D4C17F;
+}
+
+.header__title-img {
+  margin-top: 81px;
 }/*# sourceMappingURL=main.css.map */
