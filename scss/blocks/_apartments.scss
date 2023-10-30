@@ -1,0 +1,41 @@
+.apartments {
+}
+
+.apartments__title {
+    margin-bottom: 88px;
+    font-family: $font-accent;
+    font-size: 36px;
+    font-weight: 700;
+    color: $accent;
+}
+
+.apartments__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.apartments__item {
+    position: relative;
+}
+
+.apartments__item-img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        #242B33 0%,
+        rgba(36, 43, 51, 0.00) 0.01%,
+        #242B33 100%), 
+        url('./../img/apartments/01.jpg');
+}
+
+.apartments__item-title--wrapper {
+    position: absolute;
+    bottom: 44px;
+    left: 50px;
+}
+
+.apartments__item-title {
+    font-size: 24px;
+}

@@ -233,4 +233,38 @@ a:hover {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.35; /* 135%  line-height / font-size*/
+}
+
+.apartments__title {
+  margin-bottom: 88px;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #D4C17F;
+}
+
+.apartments__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.apartments__item {
+  position: relative;
+}
+
+.apartments__item-img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%), url("./../img/apartments/01.jpg");
+}
+
+.apartments__item-title--wrapper {
+  position: absolute;
+  bottom: 44px;
+  left: 50px;
+}
+
+.apartments__item-title {
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
