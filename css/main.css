@@ -252,7 +252,7 @@ a:hover {
 
 .apartments__cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -265,6 +265,7 @@ a:hover {
 .card::before {
   content: "";
   position: absolute;
+  z-index: 6;
   left: 0;
   top: 0;
   width: 100%;
@@ -275,6 +276,7 @@ a:hover {
   opacity: 0;
   content: "";
   position: absolute;
+  z-index: 7;
   top: 15px;
   right: 15px;
   bottom: 15px;
@@ -290,7 +292,9 @@ a:hover {
 }
 
 .card__img {
-  transition: transform 0.2s ease-in;
+  position: relative;
+  z-index: 5;
+  transition: all 0.2s ease-in;
 }
 .card__img:hover {
   transform: scale(1.1);
@@ -298,6 +302,7 @@ a:hover {
 
 .card:hover .card__img {
   transform: scale(1.1);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
 }
 
 .card__title {
