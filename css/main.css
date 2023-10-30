@@ -112,6 +112,9 @@ a:hover {
   padding: 0 15px;
   margin: 0 auto;
 }
+.container--sm {
+  max-width: 839px;
+}
 
 .text-right {
   text-align: right;
@@ -205,4 +208,29 @@ a:hover {
 }
 .info--tel::before {
   background-image: url(./../img/header/phone.svg);
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__row {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+
+.benefits__item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.35; /* 135%  line-height / font-size*/
 }/*# sourceMappingURL=main.css.map */
