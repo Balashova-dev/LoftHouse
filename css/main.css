@@ -136,6 +136,17 @@ a:hover {
   white-space: nowrap;
 }
 
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #D4C17F;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -237,34 +248,51 @@ a:hover {
 
 .apartments__title {
   margin-bottom: 88px;
-  font-family: "Playfair Display", serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: #D4C17F;
 }
 
-.apartments__row {
+.apartments__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
-.apartments__item {
+.card {
+  display: block;
   position: relative;
+  color: #fff;
 }
-
-.apartments__item-img {
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%), url("./../img/apartments/01.jpg");
+  background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242833 100%);
 }
-
-.apartments__item-title--wrapper {
+.card::after {
+  opacity: 0;
+  content: "";
   position: absolute;
-  bottom: 44px;
-  left: 50px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 3px double rgba(225, 225, 225, 0.4);
+  transition: opacity 0.2s ease-in;
+}
+.card:hover {
+  color: #fff;
+}
+.card:hover::after {
+  opacity: 1;
 }
 
-.apartments__item-title {
+.card__title {
+  position: absolute;
+  z-index: 9;
+  left: 50px;
+  right: 20px;
+  bottom: 44px;
   font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
