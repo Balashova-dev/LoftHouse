@@ -1,4 +1,5 @@
 .card {
+    overflow: hidden;
     display: block;
     position: relative;
     color: $white;
@@ -42,7 +43,15 @@
 }
 
 .card__img {
+    transition: transform 0.2s ease-in;
 
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.card:hover .card__img {
+    transform: scale(1.1);
 }
 
 
