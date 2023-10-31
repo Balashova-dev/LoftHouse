@@ -1,26 +1,21 @@
-.CTA {
+.cta {
     padding: 180px 0;
 }
 
-.CTA__row {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
+.CTA__title {
+    margin-bottom: 17px;
 }
 
-.CTA__content {
+.cta__wrapper {
+    
+}
+
+.cta__text {
     font-size: 16px;
     line-height: 1.5; /* 150% */
 }
 
-.CTA__content-title {
-    margin-bottom: 17px;
-}
-
-.CTA__content-text {
-}
-
-.form {
+.cta__form {
     max-width: 540px;
 }
 
