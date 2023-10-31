@@ -316,51 +316,23 @@ a:hover {
 
 .cta {
   padding: 180px 0;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url("./../img/CTA/cta-bg.jpg"), #c4c4c4;
 }
 
-.CTA__title {
+.cta__title {
   margin-bottom: 17px;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .cta__text {
   font-size: 16px;
   line-height: 1.5; /* 150% */
 }
-
-.cta__form {
-  max-width: 540px;
-}
-
-.form__heading {
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  margin-bottom: 35px;
-}
-
-.form__heading-input {
-  font-size: 14px;
-  line-height: 1.92; /* 192.857% */
-  color: #BEBEBE;
-  opacity: 0.2;
-  background: #FFF;
-}
-
-.form__footer {
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-
-.form__footer-text {
-  font-size: 13px;
-  line-height: 1.23; /* 123.077% */
-  text-align: center;
-  color: #E7E7E7;
-}
-
-.form__footer-btn {
-  display: inline-block;
-  padding: 12px 54px 11px;
-  background-color: #D4C17F;
+.cta__text p + p {
+  margin-top: 1em;
 }/*# sourceMappingURL=main.css.map */
