@@ -1,5 +1,5 @@
 .form {
-    
+
 }
 
 .form__input {
@@ -10,16 +10,20 @@
 
     font-size: 14px;
     color: $white;
+    transition: background-color 0.2s ease-in;
 
     &::placeholder {
         color: $placeholder;
+    }
+
+    &:focus {
+        background: rgb(255, 255, 255, 0.25);
     }
 }
 
 .form__privacy {
     text-align: center;
     font-size: 13px;
-    font-weight: 400;
     line-height: 1.23; /* 123.077% */
     color: $muted;
 }
@@ -32,4 +36,15 @@
     text-align: center;
     background-color: $accent;
     color: $white;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: saturate($accent, 10%);
+    }
+}
+
+.cta__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
 }
