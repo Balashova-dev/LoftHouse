@@ -1,0 +1,35 @@
+.form {
+    
+}
+
+.form__input {
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.2);
+
+    font-size: 14px;
+    color: $white;
+
+    &::placeholder {
+        color: $placeholder;
+    }
+}
+
+.form__privacy {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.23; /* 123.077% */
+    color: $muted;
+}
+
+.form__btn {
+    height: 50px;
+    padding: 12px 12px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background-color: $accent;
+    color: $white;
+}
