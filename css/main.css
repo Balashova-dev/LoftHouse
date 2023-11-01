@@ -398,7 +398,11 @@ a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8));
+  background: rgba(36, 43, 51, 0.8);
+  transition: background-color 0.2s ease-in;
+}
+.video__link:hover::before {
+  background: rgba(36, 43, 51, 0.7);
 }
 
 .video__icon {
