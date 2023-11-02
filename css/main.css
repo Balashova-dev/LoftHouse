@@ -450,6 +450,8 @@ a:hover {
   padding-top: 72px;
   padding-bottom: 51px;
   background-color: #2D343C;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
 }
 
 .footer__grid {
@@ -460,4 +462,21 @@ a:hover {
 
 .footer__logo {
   margin-top: -12px;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__adress {
+  display: grid;
+  gap: 20px;
+}
+
+.footer__socials {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
