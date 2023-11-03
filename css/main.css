@@ -417,6 +417,7 @@ a:hover {
 }
 
 .video {
+  position: relative;
   text-align: center;
 }
 
@@ -436,6 +437,17 @@ a:hover {
 }
 .video__link:hover::before {
   background: rgba(36, 43, 51, 0.7);
+}
+.video__link::after {
+  content: "IV";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .video__icon {
