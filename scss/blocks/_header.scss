@@ -24,7 +24,7 @@
 }
 
 .header__nav {
-    @media screen and (max-width: 999px) {
+    @include mediaTablet {
         display: none;
     }
 }
@@ -57,7 +57,7 @@
 .header__nav-btn {
     display: none;
 
-    @media screen and (max-width: 999px) {
+    @include mediaTablet {
         display: block;
     }
 }
