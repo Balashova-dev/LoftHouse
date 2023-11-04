@@ -23,6 +23,12 @@
     align-items: center;
 }
 
+.header__nav {
+    @media screen and (max-width: 999px) {
+        display: none;
+    }
+}
+
 
 .header__title {
     position: relative;
