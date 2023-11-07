@@ -533,6 +533,11 @@ a:hover {
   padding: 180px 0;
   background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url("./../img/CTA/cta-bg.jpg"), #c4c4c4;
 }
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
+}
 
 .cta__title {
   margin-bottom: 17px;
@@ -543,13 +548,22 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta__text {
-  font-size: 16px;
   line-height: 1.5; /* 150% */
 }
 .cta__text p + p {
   margin-top: 1em;
+}
+@media screen and (max-width: 959px) {
+  .cta__text {
+    font-size: 14px;
+  }
 }
 
 .form__input {
@@ -577,6 +591,11 @@ a:hover {
   line-height: 1.23; /* 123.077% */
   color: #E7E7E7;
 }
+@media screen and (max-width: 959px) {
+  .form__privacy--bottom {
+    grid-row: 4/5;
+  }
+}
 
 .form__btn {
   height: 50px;
@@ -596,6 +615,11 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .video {

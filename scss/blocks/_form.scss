@@ -26,6 +26,12 @@
     font-size: 13px;
     line-height: 1.23; /* 123.077% */
     color: $muted;
+
+    &--bottom {
+        @include mediaTablet {
+            grid-row: 4 / 5;
+        }
+    }
 }
 
 .form__btn {
@@ -47,4 +53,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }
