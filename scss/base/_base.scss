@@ -74,3 +74,7 @@ a {
     color: $accent;
     font-weight: 700;
 }
+
+.no-scroll {
+    overflow-y: hidden;
+}
