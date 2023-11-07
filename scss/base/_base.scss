@@ -68,6 +68,10 @@ a {
     font-size: 36px;
     font-weight: 700;
     color: $accent;
+
+    @include mediaTablet {
+        font-size: 28px;
+    }
 }
 
 .link-bold {
