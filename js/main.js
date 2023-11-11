@@ -27,8 +27,6 @@ phoneInputs.forEach((input) => {
 });
 
 /* Yandex Map */
-
-<script type="text/javascript">
     // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(init);
@@ -39,12 +37,27 @@ phoneInputs.forEach((input) => {
             // Порядок по умолчанию: «широта, долгота».
             // Чтобы не определять координаты центра карты вручную,
             // воспользуйтесь инструментом Определение координат.
-            center: [55.76, 37.64],
+            center: [59.943543, 30.338928],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
-            zoom: 7
+            zoom: 16
         });
+
+    
+        var myPlacemark = new ymaps.Placemark(
+            [59.943543, 30.338928], 
+            {}, 
+            {
+            iconLayout: 'default#image',
+            iconImageHref: './img/map/location-pin.svg',
+            icon_imagesize: [40, 40],
+            iconImageOffset: [-20, -40]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
     }
-</script>
+
+    
+
 
 
