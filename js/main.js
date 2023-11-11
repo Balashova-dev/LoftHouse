@@ -25,3 +25,5 @@ phoneInputs.forEach((input) => {
     if (input.value == '+') input.value = '';
     })
 });
+
+
