@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loft House</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
 </head>
 <body>
     <header class="header">
@@ -141,7 +142,7 @@
         <section class="video">
             <div class="container">
                 <h2 class="visually-hidden">Видео про ЖК "Loft House"</h2>
-                <a href="https://www.youtube.com/watch&v=bhJNL9JUsnY" class="video__link">
+                <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" data-youtubeLightbox class="video__link">
                     <img src="./img/video/play-button.svg" alt="" class="video__icon">
                     <img src="./img/video/video-img.jpg" alt="" class="video__img" >
                 </a>
@@ -230,7 +231,7 @@
     <div id="youtubelightbox" class="youtubelightbox">
         <div class="youtubelightbox__centeredchild">
             <div class="youtubelightbox__videowrapper">
-                <div class="youtubelightboxPlayer"></div>
+                <div id="youtubelightboxPlayer"></div>
             </div>
         </div>
     </div>
