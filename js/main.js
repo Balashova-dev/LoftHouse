@@ -9,3 +9,7 @@ navBtn.onclick = function () {
     nav.classList.toggle('header__top-row--mobile');
     document.body.classList.toggle('no-scroll');
 };
+
+/* Phone Mask */
+
+mask('[data-tel-input]');
