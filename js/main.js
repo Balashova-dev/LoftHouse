@@ -32,7 +32,7 @@ phoneInputs.forEach((input) => {
     ymaps.ready(init);
     function init(){
         // Создание карты.
-        var myMap = new ymaps.Map("map", {
+        var map = new ymaps.Map("map", {
             // Координаты центра карты.
             // Порядок по умолчанию: «широта, долгота».
             // Чтобы не определять координаты центра карты вручную,
@@ -64,7 +64,17 @@ phoneInputs.forEach((input) => {
             iconImageOffset: [-20, -40]
         });
 
-        myMap.geoObjects.add(myPlacemark);
+        map.controls.remove('geolocationControl'); // удаление геолокации
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль пробок
+        map.controls.remove('typeSelector'); //удаляем тип
+
+        // map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        // map.controls.remove('zoomControl'); // удаляем контроль увеличения
+        map.controls.remove('rulerControl'); // удаляем контроль правил
+        map.behaviors.disable(['scrollZoom']); // отключаем прокрутку карты (опционально)
+
+        map.geoObjects.add(myPlacemark);
     }
 
     
