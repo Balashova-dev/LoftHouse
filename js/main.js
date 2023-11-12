@@ -75,9 +75,8 @@ phoneInputs.forEach((input) => {
         map.behaviors.disable(['scrollZoom']); // отключаем прокрутку карты (опционально)
 
         map.geoObjects.add(myPlacemark);
-    }
-
-    
+        myPlacemark.balloon.open();
+    };
 
 
 
