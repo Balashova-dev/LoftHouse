@@ -837,4 +837,12 @@ a:hover {
   -moz-column-gap: 22px;
        column-gap: 22px;
   align-items: center;
+}
+
+.footer__socials-link svg {
+  fill: #fff;
+}
+
+.footer__socials-link:hover svg {
+  fill: #D4C17F;
 }/*# sourceMappingURL=main.css.map */

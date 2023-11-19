@@ -26,20 +26,6 @@
     margin-top: -12px;
 }
 
-.footer__nav {
-   
-}
-
-.footer__adress {
-}
-
-.footer__grid {
-}
-.footer__logo {
-}
-.footer__nav {
-}
-
 .footer__nav-list {
     display: grid;
     gap: 15px;
@@ -54,4 +40,12 @@
     display: flex;
     column-gap: 22px;
     align-items: center;
+}
+
+.footer__socials-link svg {
+    fill: $white;
+}
+
+.footer__socials-link:hover svg {
+    fill: $accent;
 }
